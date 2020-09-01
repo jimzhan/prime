@@ -9,7 +9,7 @@ async function main() {
   const port = 3000;
 
   httpServer.listen(port, () => {
-    console.log(`Listening on port ${port}...`);
+    console.log(`Start listening on port ${port}...`);
   });
 }
 
