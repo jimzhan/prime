@@ -1,5 +1,5 @@
 {
-  "name": "@prime/api",
+  "name": "@prime/server",
   "version": "0.0.0",
   "description": "API services",
   "license": "ISC",
@@ -11,6 +11,8 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@foal/core": "^1.11.1"
+    "@foal/core": "^1.11.1",
+    "@types/confidence": "^1.4.30",
+    "confidence": "^4.0.2"
   }
 }
