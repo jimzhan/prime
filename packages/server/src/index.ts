@@ -2,14 +2,14 @@ import * as http from 'http';
 import { createApp } from '@foal/core';
 
 import { AppController } from './apps';
+import settings from './settings'
 
 async function main() {
   const app = createApp(AppController);
   const httpServer = http.createServer(app);
-  const port = 3000;
 
-  httpServer.listen(port, () => {
-    console.log(`Start listening on port ${port}...`);
+  httpServer.listen(settings.port, () => {
+    console.log(`Start listening on port ${settings.port}...`);
   });
 }
 
